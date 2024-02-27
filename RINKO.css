@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    background-image: url(IMG_0960.JPG);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 100px;
+    color: blue;
+    
+}
+.container{
+    color: darkmagenta;
+    font-size: 20px;
+    background-color: black;
+    background-image: url(IMG_0989.JPG);
+    background-size: cover;
+    height: 250 px;
+    width: 850px;
+    border: 3px solid;
+    padding: 20px;
+    border-color: aliceblue;
+}
+#countdown{
+    color: blue;
+    font-size: 98px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
