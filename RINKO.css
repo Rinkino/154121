@@ -1,35 +1,55 @@
-body{
+body {
+    background: radial-gradient(circle, #1a1a2e, #16213e);
+    height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: #f4f4f4;
-    background-image: url(IMG_0960.JPG);
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    margin: 0;
-    height: 100vh;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    margin: 0;
 }
 
-h1{
-    font-size: 100px;
-    color: blue;
-    
+.glass-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    max-width: 400px;
 }
-.container{
-    color: darkmagenta;
-    font-size: 20px;
-    background-size: cover;
-    height: 250 px;
-    width: 850px;
-    border: 3px solid;
-    padding: 20px;
-    border-color: aliceblue;
+
+/* Animations */
+.fade-in { animation: fadeIn 1.5s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } }
+
+.glow-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00d2ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00d2ff;
+    transition: 0.3s;
 }
-#countdown{
-    color: blue;
-    font-size: 98px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
+
+.glow-button:hover {
+    box-shadow: 0 0 30px #00d2ff;
+    transform: scale(1.05);
+}
+
+.pulse-timer {
+    font-size: 1.5rem;
+    color: #ff4d4d;
+    margin: 20px 0;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(1); }
 }
